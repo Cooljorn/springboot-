@@ -69,11 +69,18 @@ public class ZipTest {
              WritableByteChannel writableByteChannel = Channels.newChannel(zipOut)) {
             try (FileChannel fileChannel = new FileInputStream(FILE_PATH).getChannel()) {
                 zipOut.putNextEntry(new ZipEntry( FILE_NAME));
-                fileChannel.transferTo(0, FILE_SIZE, writableByteChannel);
+                fileChannel.transferTo(0, 10993009, writableByteChannel);
             }
             SoutUtil.betweenTimeMs(beginTime);
         } catch (Exception e) {
             e.printStackTrace();
         }
+    }
+    @Test
+    public void fileSize(){
+        //开始时间
+        Instant beginTime = Instant.now();
+        System.out.println(new File(FILE_PATH).length());
+        SoutUtil.betweenTimeMs(beginTime);
     }
 }
