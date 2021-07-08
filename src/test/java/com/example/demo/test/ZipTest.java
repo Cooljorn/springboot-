@@ -12,7 +12,9 @@ import java.time.temporal.ChronoUnit;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipOutputStream;
 
-
+/**
+ * 压缩文件测试
+ * */
 public class ZipTest {
     public static String ZIP_FILE = "D:\\out\\zip.zip";
     public static String FILE_PATH = "D:\\out\\JAVA核心知识点整理.pdf";
