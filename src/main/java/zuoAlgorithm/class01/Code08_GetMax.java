@@ -11,6 +11,7 @@ public class Code08_GetMax {
 		if (L == R) { // arr[L..R]范围上只有一个数，直接返回，base case
 			return arr[L];
 		}
+		// mid = (L+R)/2 存在溢出的可能
 		int mid = L + ((R - L) >> 1); // 中点
 		int leftMax = process(arr, L, mid);
 		int rightMax = process(arr, mid + 1, R);
