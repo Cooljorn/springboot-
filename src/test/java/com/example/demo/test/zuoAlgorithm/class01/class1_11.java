@@ -1,4 +1,4 @@
-package com.example.demo.test.zuoAlgorithm;
+package com.example.demo.test.zuoAlgorithm.class01;
 
 import java.util.Scanner;
 

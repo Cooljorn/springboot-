@@ -40,6 +40,12 @@ public class Code03_Islands {
 				        { 0, 0, 0, 0, 1, 1, 1, 0, 0 },
 				        { 0, 0, 0, 0, 0, 0, 0, 0, 0 }, };
 		System.out.println(countIslands(m1));
+		for (int i = 0; i < m1.length; i++) {
+			for(int j=0;j<m1[0].length;j++) {
+				System.out.print(m1[i][j]);
+			}
+			System.out.println();
+		}
 
 		int[][] m2 = {  { 0, 0, 0, 0, 0, 0, 0, 0, 0 }, 
 						{ 0, 1, 1, 1, 1, 1, 1, 1, 0 }, 
