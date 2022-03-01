@@ -19,7 +19,7 @@ public class Code02_Manacher {
 		char[] charArr = manacherString(str);
 		int[] pArr = new int[charArr.length];
 		int C = -1;
-		int R = -1;
+		int R = -1;//最右扩充位置的下一个位置
 		int max = Integer.MIN_VALUE;
 		for (int i = 0; i != charArr.length; i++) {
 			pArr[i] = R > i ? Math.min(pArr[2 * C - i], R - i) : 1;
